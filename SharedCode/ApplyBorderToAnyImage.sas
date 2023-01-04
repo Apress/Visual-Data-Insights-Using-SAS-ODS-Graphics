@@ -1,0 +1,21 @@
+
+%macro ApplyBorderToAnyImage(in=,out=,height=,width=);
+ods results off;
+ods _all_ close;
+title; footnote;
+options center nonumber nodate;
+options papersize=(&width &height);
+goptions device=PNGT transparency;
+ods printer printer=PNG300 dpi=300 file="&out";
+ods layout absolute;
+ods region x=0in y=0in width=&width height=&height;
+data _null_; 
+dcl odsout obj(); 
+obj.image(file: "&in");
+run;
+ods region x=0in y=0in width=&width height=&height;
+proc gslide border; 
+run; quit;
+ods layout end;
+ods printer close;
+%mend ApplyBorderToAnyImage;

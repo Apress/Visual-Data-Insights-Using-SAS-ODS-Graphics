@@ -1,0 +1,40 @@
+The DATASETS Procedure
+
+Data Set Name        CITILIB.CITIYR                Observations          10
+Member Type          DATA                          Variables             6 
+Engine               V9                            Indexes               0 
+Created              12/22/2011 11:10:23           Observation Length    41
+Last Modified        12/22/2011 11:10:23           Deleted Observations  0 
+Protection                                         Compressed            NO
+Data Set Type                                      Sorted                NO
+Label                                                                      
+Data Representation  WINDOWS_32                                            
+Encoding             wlatin1  Western (Windows)                            
+
+
+           Engine/Host Dependent Information
+
+Data Set Page Size          4096                       
+Number of Data Set Pages    1                          
+First Data Page             1                          
+Max Obs per Page            99                         
+Obs in First Data Page      10                         
+Number of Data Set Repairs  0                          
+Filename                    C:\CitiData\citiyr.sas7bdat
+Release Created             9.0202M3                   
+Host Created                XP_PRO                     
+Owner Name                  MEQUON-2\Owner             
+File Size                   5KB                        
+File Size (bytes)           5120                       
+
+
+                    Alphabetic List of Variables and Attributes
+ 
+#    Variable    Type    Len    Format    Label
+
+1    DATE        Num       6    YEAR4.    Date of Observation                     
+2    PAN         Num       7              POPULATION EST.: ALL AGES, INC.ARMED F. 
+3    PAN17       Num       7              POPULATION EST.: 16 YRS AND OVER,INC ARM
+4    PAN18       Num       7              POPULATION EST.: 18-64 YRS,INC.ARMED F.O
+5    PANF        Num       7              POPULATION EST.: FEMALES,ALL AGES,INC.AR
+6    PANM        Num       7              POPULATION EST.: MALES, ALL AGES, INC.AR
